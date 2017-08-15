@@ -1,0 +1,56 @@
+﻿body {
+    position:relative;
+    font-family:Calibri;
+    text-rendering:optimizeLegibility;text-rendering: geometricPrecision;
+    -webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:grayscale;-moz-font-smoothing: antialiased;
+    color:$primaryFont;
+    padding:0;
+    margin:0;
+    z-index:1;
+    min-width:$minWidth;
+    font-size:#{$baseFontSize}px;
+
+}
+
+a {
+    cursor:pointer;
+    text-decoration:none;
+}
+
+header {
+    height:40px;
+    background:$orange;
+    padding:12px 20px;
+    box-shadow: 0px 1px 3px 0px $orange;
+
+    a {
+        float:left;
+        margin-right:20px;
+        color:$white;
+        opacity:0.7;
+        transition:opacity ease-in 0.2s;
+
+        &:hover,&.active {
+            opacity:1;
+        }
+
+        &.home-link {
+            display:inline-block;
+            text-align:center;
+            width:20px;
+            height:20px;
+            line-height:18px;
+            border:solid 1px $white;
+            transition:background-color ease-in 0.2s, color ease-in 0.2s;
+
+            &:hover {
+                background:$white;
+                color:$orange;
+            }
+        }
+    }
+}
+
+main > div {
+}
